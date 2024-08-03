@@ -1,9 +1,10 @@
 ﻿// for data frame like stuff I should look into the DataTable class in System.Data namespace.
 // importing packages is done by "using <package>"
+// added this package for DI dotnet add package Microsoft.Extensions.DependencyInjection
 
 
 using System;
-using Google.Cloud.BigQuery.V2;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BigQueryDemo
 {
@@ -11,12 +12,21 @@ namespace BigQueryDemo
     {
         static void Main(string[] args)
         {
-            var client = BigQueryClient.Create("projectId");
-            var table = client.GetTable("bigquery-public-data", "samples", "shakespeare");
-            var sql = $"SELECT corpus AS title, COUNT(word) AS unique_words FROM {table} GROUP BY title ORDER BY unique_words DESC LIMIT 10";
+            // Setup DI
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IBigQueryService>(provider => new BigQueryService("projectId"))
+                .BuildServiceProvider();
 
-            var results = client.ExecuteQuery(sql, parameters: null);
+            // Get service
+            var bigQueryService = serviceProvider.GetService<IBigQueryService>();
 
+            // Define SQL query
+            var sql = "SELECT corpus AS title, COUNT(word) AS unique_words FROM `bigquery-public-data.samples.shakespeare` GROUP BY title ORDER BY unique_words DESC LIMIT 10";
+
+            // Execute query
+            var results = bigQueryService.ExecuteQuery(sql);
+
+            // Display results
             foreach (var row in results)
             {
                 Console.WriteLine($"{row["title"]}: {row["unique_words"]}");
@@ -24,4 +34,5 @@ namespace BigQueryDemo
         }
     }
 }
+
 
