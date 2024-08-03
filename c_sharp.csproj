@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Cloud.BigQuery.V2" Version="3.10.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Sstv.Outbox.Npgsql" Version="1.0.0" />
   </ItemGroup>
