@@ -1,3 +1,4 @@
-*.json
+secrets/
 bin/
 obj/
+google-cloud-sdk/
