@@ -1,38 +1,59 @@
-﻿// for data frame like stuff I should look into the DataTable class in System.Data namespace.
-// importing packages is done by "using <package>"
-// added this package for DI dotnet add package Microsoft.Extensions.DependencyInjection
-
-
-using System;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace BigQueryDemo
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Setup DI
-            var serviceProvider = new ServiceCollection()
-                .AddSingleton<IBigQueryService>(provider => new BigQueryService("projectId"))
-                .BuildServiceProvider();
-
-            // Get service
-            var bigQueryService = serviceProvider.GetService<IBigQueryService>();
-
-            // Define SQL query
-            var sql = "SELECT corpus AS title, COUNT(word) AS unique_words FROM `bigquery-public-data.samples.shakespeare` GROUP BY title ORDER BY unique_words DESC LIMIT 10";
-
-            // Execute query
-            var results = bigQueryService.ExecuteQuery(sql);
-
-            // Display results
-            foreach (var row in results)
-            {
-                Console.WriteLine($"{row["title"]}: {row["unique_words"]}");
-            }
-        }
-    }
-}
-
+﻿using System;
+using Google.Cloud.BigQuery.V2;
+using System.Text.Json;
+
+
+namespace GoogleCloudSamples
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            
+			// Why is it such a pain to simply get a JSON value?!
+			// Guess this is how I am doing it?
+			// Also I think that ?? string.Empty will basically make an empty non obj if the value is null...
+			string credentials = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS") ?? string.Empty;
+			
+			if(string.IsNullOrEmpty(credentials))
+			{
+				Console.WriteLine("Credential File was not found bruv");
+				return;
+			}
+			
+
+			string credentials_json = File.ReadAllText(credentials);
+			JsonDocument json = JsonDocument.Parse(credentials_json);
+			
+
+
+			// Ok so for some reason you need to first check if the key exists...
+			// Then return it. I am sure you can get around this but it seems like good practice I guess..
+			// type is suffixed with '?' to allow null, I think that is how you do that...
+			string? projectId;
+
+			if(json.RootElement.TryGetProperty("project_id", out JsonElement value))
+			{
+				projectId = value.GetString();
+			}
+			else
+			{
+				projectId = null;
+				Console.WriteLine("Key not found and you're dumb");
+			}
+
+
+			// If that works then we can move the above code to maybe another file and work on...
+			// Implementing dependency injection pattern...
+            var client = BigQueryClient.Create(projectId);
+            string query = @"select * from `healthcare-111-391317.hc_db_prod_111.hc_decade_projections`";
+            var result = client.ExecuteQuery(query, parameters: null);
+            Console.Write("\nQuery Results:\n------------\n");
+            foreach (var row in result)
+            {
+                Console.WriteLine($"{row["url"]}: {row["view_count"]} views");
+            }
+        }
+    }
+}
 

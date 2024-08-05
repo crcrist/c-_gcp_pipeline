@@ -25,10 +25,10 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 ## Relevant Documentation
 - [gcloud CLI](https://cloud.google.com/sdk/docs/install)
-- [C# BigQuery client Library](https://cloud.google.com/bigquery/docs/reference/libraries)
 - [GCP Service Accounts](https://cloud.google.com/iam/docs/service-account-overview)
-- [Google Cloud Free Tier Docs](https://cloud.google.com/free/docs/free-cloud-features)
 - [GCP Billing Dashboard](https://console.cloud.google.com/billing)
+- [C# BigQuery client Library](https://cloud.google.com/bigquery/docs/reference/libraries)
+- [Google Cloud Free Tier Docs](https://cloud.google.com/free/docs/free-cloud-features)
 - [DataTable class for Tabular Data](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-8.0)
 
 
