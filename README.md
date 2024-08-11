@@ -14,7 +14,7 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 ## Files
 - **Program.cs** - *Main application file.*
-- **BigQueryService.cs** - BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
+- **GoogleCredentialHelper.cs** - BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
 - **c_sharp.csproj** - project dependencies.
 
 ## FAQ 
