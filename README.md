@@ -18,7 +18,8 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 - **c_sharp.csproj** - project dependencies.
 
 ## FAQ 
-**How do I set my application credentials in my environment?** - export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
+**How do I set my application credentials in my environment?** 
+- export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
 
 
 ## ToDo 
