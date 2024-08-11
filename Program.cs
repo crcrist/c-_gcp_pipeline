@@ -21,7 +21,7 @@ namespace GoogleCloudSamples
                 Console.WriteLine("\nQuery Results:\n------------");
                 foreach (var row in result)
                 {
-                    Console.WriteLine($"{row["url"]}: {row["view_count"]} views");
+                    Console.WriteLine($"{row["occupation_title"]}: {row["occupational_openings_2021_2031_annual_average"]}");
                 }
             }
             catch (InvalidOperationException ex)

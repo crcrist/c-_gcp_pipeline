@@ -17,6 +17,10 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 - **BigQueryService.cs** - BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
 - **c_sharp.csproj** - project dependencies.
 
+## FAQ 
+**How do I set my application credentials in my environment?** - export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
+
+
 ## ToDo 
 1. Establish mutually accessible service account in **GCP**.
 2. Create API call logic.
