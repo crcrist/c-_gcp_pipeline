@@ -23,7 +23,7 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 ## ToDo 
 1. Establish mutually accessible service account in **GCP**.
-2. Create API call logic.
+2. ~~Create API call logic.~~
 3. Develop transformation logic.
 4. Create Postgres instance for landing.
 
