@@ -13,9 +13,15 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 
 ## Files
-- **Program.cs** - *Main application file.*
-- **GoogleCredentialHelper.cs** - BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
-- **c_sharp.csproj** - project dependencies.
+- **Program.cs** - 
+*Main application file.*
+- **GoogleCredentialHelper.cs** 
+BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
+- **makeDataTable.cs**
+Tabular Data constructor for itermediate storage.
+- **c_sharp.csproj** 
+project dependencies.
+
 
 ## FAQ 
 **How do I set my application credentials in my environment?** 
@@ -25,8 +31,9 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 ## ToDo 
 1. Establish mutually accessible service account in **GCP**.
 2. ~~Create API call logic.~~
-3. Develop transformation logic.
-4. Create Postgres instance for landing.
+4. ~~Create Tabular Storage for Transformation~~
+5. Develop transformation logic.
+6. Create Postgres instance for landing.
 
 ## Relevant Documentation
 - [gcloud CLI](https://cloud.google.com/sdk/docs/install)
