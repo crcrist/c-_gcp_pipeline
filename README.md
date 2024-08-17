@@ -13,13 +13,13 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 
 ## Files
-**Program.cs**  
+- **Program.cs**  
     - *Main application file.*
-**GoogleCredentialHelper.cs** 
+- **GoogleCredentialHelper.cs** 
     - *BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.*
-**makeDataTable.cs**
+- **makeDataTable.cs**
     - *Tabular Data constructor for itermediate storage.*
-**c_sharp.csproj** 
+- **c_sharp.csproj** 
     - *project dependencies.*
 
 
