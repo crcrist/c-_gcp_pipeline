@@ -1,54 +1,55 @@
 using Google.Cloud.BigQuery.V2;
-using System.Data;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using dotenv.net;
-
 
 namespace GoogleCloudSamples
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            // this is grabbing the connection string from the .env file, can probably be done better, but for now we have this
+            // Set up dependency injection
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+            var serviceProvider = services.BuildServiceProvider();
 
+            var mediator = serviceProvider.GetRequiredService<IMediator>();
+
+            // Load environment variables
             DotEnv.Load(options: new DotEnvOptions(envFilePaths: new[] { "../.env" }));
-            /*
+
             try
             {
-                string projectId = GoogleCredentialsHelper.GetProjectId();
-                Console.WriteLine($"Project ID: {projectId}");
+                // Send query to get BigQuery results
+                var query = new GetBigQueryResultsQuery(@"select avg(avg_annual_wage) as avg_income from `healthcare-111-391317.hc_db_prod_111.hc_emp_history`");
+                var result = await mediator.Send(query);
 
-                // Create BigQuery client and execute query
-                var client = BigQueryClient.Create(projectId);
-                string query = @"select avg(avg_annual_wage) as avg_income from `healthcare-111-391317.hc_db_prod_111.hc_emp_history`";
-                BigQueryResults result = client.ExecuteQuery(query, parameters: null);
-                
-				
-				// DataTable here 
-				makeDataTable addRows = new makeDataTable();
-				DataTable df = addRows.createTable(result);
+                // Create DataTable from BigQuery results
+                var dataTableCreator = serviceProvider.GetRequiredService<IDataTableCreator>();
+                var dataTable = dataTableCreator.CreateDataTable(result);
 
-				foreach (DataRow row in df.Rows)
-				{
-					Console.WriteLine($"{row["id"]}, Income {row["avg_income"]}");
-				}
-               
+                // Send command to insert data into PostgreSQL
+                var command = new InsertDataCommand(dataTable);
+                await mediator.Send(command);
 
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine("Data Inserted Successfully");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+                Console.WriteLine($"Error: {ex.Message}");
             }
-            */
+        }
 
-            var dbTest = new DBConnectTest();
-            dbTest.RunTest();
+        private static void ConfigureServices(IServiceCollection services)
+        {
+            // Register MediatR
+            services.AddMediatR(typeof(Program).Assembly);
 
-            Console.WriteLine("Data Inserted Successfully");
+            // Register other services
+            services.AddSingleton<IDatabaseService, PostgresDatabaseService>();
+            services.AddSingleton<IDataTableCreator, BigQueryDataTableCreator>();
+            services.AddSingleton<IGoogleCredentialService, GoogleCredentialService>();
         }
     }
 }

@@ -2,7 +2,7 @@ using System.Data;
 using Google.Cloud.BigQuery.V2;
 
 
-public class makeDataTable
+public class BigQueryDataTableCreator : IDataTableCreator
 {
 
 	// Query results create a "BigQueryResults" object type and must 

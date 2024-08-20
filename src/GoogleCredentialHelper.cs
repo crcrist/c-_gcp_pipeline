@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-public static class GoogleCredentialsHelper
+public class GoogleCredentialService : IGoogleCredentialService
 {
     public static string GetProjectId()
     {

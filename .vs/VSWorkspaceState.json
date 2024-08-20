@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\CommandHandlers.cs",
+    "\\src\\Commands",
+    "\\src\\Queries",
+    "\\src\\QueryHandlers"
   ],
   "SelectedNode": "\\src\\Program.cs",
   "PreviewInSolutionExplorer": false

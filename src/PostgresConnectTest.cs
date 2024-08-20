@@ -1,7 +1,7 @@
 using Npgsql;
 using System.Data;
 
-public class DBConnectTest
+public class PostgresDatabaseService : IDatabaseService
 {
     private string GetConnectionString()
     {

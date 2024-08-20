@@ -7,16 +7,36 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\GoogleCredentialHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\GoogleCredentialHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\PostgresConnectTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PostgresConnectTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\makeDataTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\makeDataTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\PostgresConnectTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PostgresConnectTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\GoogleCredentialHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\GoogleCredentialHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\Queries\\GetBigQueryResultsQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Queries\\GetBigQueryResultsQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\CommandHandlers.cs\\InsertDataCommandHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\CommandHandlers.cs\\InsertDataCommandHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\Source\\Repos\\c-_gcp_pipeline\\src\\Commands\\InsertDataCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Commands\\InsertDataCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\c_sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\c_sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -25,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\c_sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\c_sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +70,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetBigQueryResultsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs",
+              "RelativeDocumentMoniker": "src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs",
+              "RelativeToolTip": "src\\QueryHandlers\\GetBigQueryResultsQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T11:28:02.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InsertDataCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\CommandHandlers.cs\\InsertDataCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\CommandHandlers.cs\\InsertDataCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\CommandHandlers.cs\\InsertDataCommandHandler.cs",
+              "RelativeToolTip": "src\\CommandHandlers.cs\\InsertDataCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T11:27:07.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetBigQueryResultsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\Queries\\GetBigQueryResultsQuery.cs",
+              "RelativeDocumentMoniker": "src\\Queries\\GetBigQueryResultsQuery.cs",
+              "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\Queries\\GetBigQueryResultsQuery.cs",
+              "RelativeToolTip": "src\\Queries\\GetBigQueryResultsQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T11:26:29.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InsertDataCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Connor\\Source\\Repos\\c-_gcp_pipeline\\src\\Commands\\InsertDataCommand.cs",
+              "RelativeDocumentMoniker": "src\\Commands\\InsertDataCommand.cs",
+              "ToolTip": "C:\\Users\\Connor\\Source\\Repos\\c-_gcp_pipeline\\src\\Commands\\InsertDataCommand.cs",
+              "RelativeToolTip": "src\\Commands\\InsertDataCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T11:25:39.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",
               "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\Program.cs",
               "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAswBEAAAAzAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T10:59:11.777Z",
               "EditorCaption": ""
@@ -73,27 +141,27 @@
               "RelativeDocumentMoniker": "src\\makeDataTable.cs",
               "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\makeDataTable.cs",
               "RelativeToolTip": "src\\makeDataTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T10:54:09.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GoogleCredentialHelper.cs",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\GoogleCredentialHelper.cs",
               "RelativeDocumentMoniker": "src\\GoogleCredentialHelper.cs",
               "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\GoogleCredentialHelper.cs",
               "RelativeToolTip": "src\\GoogleCredentialHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T10:54:07.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -106,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -119,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "c_sharp.csproj",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\c_sharp.csproj",
               "RelativeDocumentMoniker": "src\\c_sharp.csproj",
@@ -132,13 +200,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PostgresConnectTest.cs",
               "DocumentMoniker": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\PostgresConnectTest.cs",
               "RelativeDocumentMoniker": "src\\PostgresConnectTest.cs",
               "ToolTip": "C:\\Users\\Connor\\source\\repos\\c-_gcp_pipeline\\src\\PostgresConnectTest.cs",
               "RelativeToolTip": "src\\PostgresConnectTest.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAABsAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T10:43:43.017Z",
               "EditorCaption": ""
