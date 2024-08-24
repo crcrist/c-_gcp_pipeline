@@ -1,7 +1,13 @@
 using System.Text.Json;
 
 public static class GoogleCredentialsHelper
-{
+{	
+	/*
+		Just Call this in your main program with the..
+		environment var GOOGLE_APPLICATION_CREDENTIALS...
+		Set to your GCP secret JSON. 
+	*/
+
     public static string GetProjectId()
     {
         string credentialsPath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");

@@ -21,19 +21,26 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
     - *Tabular Data constructor for itermediate storage.*
 - **c_sharp.csproj** 
     - *project dependencies.*
-
+- **PostgresConnectTest.cs**
+    - *Connection logic created by [ccrist](https://github.com/crcrist) to connec to local storage for outputs.*
 
 ## FAQ 
 **How do I set my application credentials in my environment?** 
 - export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
 
+**What is the expected schema for inputs?**
+- The current data source contains {id:int, state:str, avg_employment:int} as it's inputs.
+
+**What tools/programs do I need for this to run?**
+- A GCP account, .NET installed, Postgres locally, and an IDE to connect to the Postgres DB.
+
 
 ## ToDo 
-1. Establish mutually accessible service account in **GCP**.
+1. ~~Establish mutually accessible service account in **GCP**.~~
 2. ~~Create API call logic.~~
 4. ~~Create Tabular Storage for Transformation~~
-5. Develop transformation logic.
-6. Create Postgres instance for landing.
+5. ~~Develop transformation logic.~~
+6. ~~Create Postgres instance for landing.~~
 
 ## Relevant Documentation
 - [gcloud CLI](https://cloud.google.com/sdk/docs/install)
