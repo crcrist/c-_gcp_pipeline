@@ -3,7 +3,7 @@
 ## Overview
 Data Pipeline using **.NET**, BigQuery, and Postgres.
 
-![Project FLow](./images/flow.png)
+![Project FLow](./images/flowchart.png)
 
 ## Why does this exist?
 This is a practice in **co-programming** and modern .NET ETL workflows. Our main objective is to utilize each other's strengths and gain a better understanding of the relationship between GCP and .NET.
