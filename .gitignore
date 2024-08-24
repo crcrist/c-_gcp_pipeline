@@ -4,4 +4,5 @@ obj/
 google-cloud-sdk/
 .env
 .vs/
+projectDoc/
 FETCH_HEAD
