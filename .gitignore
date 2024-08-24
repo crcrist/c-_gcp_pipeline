@@ -3,3 +3,5 @@ bin/
 obj/
 google-cloud-sdk/
 .env
+.vs/
+FETCH_HEAD
