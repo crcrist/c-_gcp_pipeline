@@ -15,7 +15,12 @@ namespace GoogleCloudSamples
 
                 // Create BigQuery client and execute query
                 var client = BigQueryClient.Create(projectId);
-                string query = @"select avg(avg_annual_wage) as avg_income from `healthcare-111-391317.hc_db_prod_111.hc_emp_history`";
+                string query = @"
+							select state,
+							avg(safe_cast(a.tot_emp as int64)) as avg_employment
+							from `healthcare-111-391317.hc_db_prod_111.hc_emp_history_state` as a
+							group by 1";
+
                 BigQueryResults result = client.ExecuteQuery(query, parameters: null);
                 
 				
@@ -25,7 +30,7 @@ namespace GoogleCloudSamples
 
 				foreach (DataRow row in df.Rows)
 				{
-					Console.WriteLine($"{row["id"]}, Income {row["avg_income"]}");
+					Console.WriteLine($"{row["id"]}, State {row["state"]}, Employment {row["avg_employment"]}");
 				}
                
 

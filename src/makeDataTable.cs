@@ -20,9 +20,14 @@ public class makeDataTable
 
 		column = new DataColumn();
 		column.DataType = Type.GetType("System.Int32");
-		column.ColumnName = "avg_income";
+		column.ColumnName = "avg_employment";
 		table.Columns.Add(column);
 		
+		column = new DataColumn();
+		column.DataType = Type.GetType("System.String");
+		column.ColumnName = "state";
+		table.Columns.Add(column);
+
 		// Index value for each row added
 		int i = 0;
 
@@ -30,7 +35,8 @@ public class makeDataTable
 		{
 			DataRow dataRow = table.NewRow();
 			dataRow["id"] = i;
-			dataRow["avg_income"] = row["avg_income"];
+			dataRow["state"] = row["state"];
+			dataRow["avg_employment"] = row["avg_employment"];
 			table.Rows.Add(dataRow);
 			i++;
 		}
