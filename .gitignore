@@ -2,3 +2,4 @@ secrets/
 bin/
 obj/
 google-cloud-sdk/
+.env

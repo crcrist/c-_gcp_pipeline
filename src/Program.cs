@@ -1,5 +1,6 @@
 using Google.Cloud.BigQuery.V2;
 using System.Data;
+using dotenv.net;
 
 
 namespace GoogleCloudSamples
@@ -8,6 +9,10 @@ namespace GoogleCloudSamples
     {
         public static void Main(string[] args)
         {
+            // this is grabbing the connection string from the .env file, can probably be done better, but for now we have this
+
+            DotEnv.Load(options: new DotEnvOptions(envFilePaths: new[] { "../.env" }));
+            /*
             try
             {
                 string projectId = GoogleCredentialsHelper.GetProjectId();
@@ -38,6 +43,12 @@ namespace GoogleCloudSamples
             {
                 Console.WriteLine($"An unexpected error occurred: {ex.Message}");
             }
+            */
+
+            var dbTest = new DBConnectTest();
+            dbTest.RunTest();
+
+            Console.WriteLine("Data Inserted Successfully");
         }
     }
 }
