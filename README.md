@@ -3,7 +3,6 @@
 ## Overview
 Data Pipeline using **.NET**, BigQuery, and Postgres.
 
-![Project Flowchart](./images/flow.png)
 
 
 ## Why does this exist?
