@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="dotenv.net" Version="3.2.0" />
     <PackageReference Include="Google.Cloud.BigQuery.V2" Version="3.10.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
     <PackageReference Include="Sstv.Outbox.Npgsql" Version="1.0.0" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
