@@ -3,7 +3,7 @@
 ## Overview
 Data Pipeline using **.NET**, BigQuery, and Postgres.
 
-![Project FLow](./images/flowchart.png)
+![Project FLow](./images/flowt.png)
 
 ## Why does this exist?
 This is a practice in **co-programming** and modern .NET ETL workflows. Our main objective is to utilize each other's strengths and gain a better understanding of the relationship between GCP and .NET.
@@ -16,25 +16,25 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 ## Files
 - **Program.cs**  
-    - *Main application file.*
+    - Main application file.
 - **GoogleCredentialHelper.cs** 
-    - *BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.*
+    - BQ API Query logic. This is part of a proposal made by  [ccrist](https://github.com/crcrist) based on his experience with C#.
 - **makeDataTable.cs**
-    - *Tabular Data constructor for itermediate storage.*
+    - Tabular Data constructor for itermediate storage.
 - **c_sharp.csproj** 
-    - *project dependencies.*
+    - project dependencies.
 - **PostgresConnectTest.cs**
-    - *Connection logic created by [ccrist](https://github.com/crcrist) to connec to local storage for outputs.*
+    - Connection logic created by [ccrist](https://github.com/crcrist) to connec to local storage for outputs.
 
 ## FAQ 
 **How do I set my application credentials in my environment?** 
-- export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
+```export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'```
 
 **What is the expected schema for inputs?**
-- The current data source contains {id:int, state:str, avg_employment:int} as it's inputs.
+```The current data source contains {id:int, state:str, avg_employment:int} as it's inputs.```
 
 **What tools/programs do I need for this to run?**
-- A GCP account, .NET installed, Postgres locally, and an IDE to connect to the Postgres DB.
+```A GCP account, .NET installed, Postgres locally, and an IDE to connect to the Postgres DB.```
 
 
 ## ToDo 
