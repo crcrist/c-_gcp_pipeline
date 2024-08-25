@@ -28,13 +28,19 @@ This is a practice in **co-programming** and modern .NET ETL workflows. Our main
 
 ## FAQ 
 **How do I set my application credentials in my environment?** 
-```export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'```
+```
+export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/client_secret.json'
+```
 
 **What is the expected schema for inputs?**
-```The current data source contains {id:int, state:str, avg_employment:int} as it's inputs.```
+```
+The current data source contains {id:int, state:str, avg_employment:int} as it's inputs.
+```
 
 **What tools/programs do I need for this to run?**
-```A GCP account, .NET installed, Postgres locally, and an IDE to connect to the Postgres DB.```
+```
+A GCP account, .NET installed, Postgres locally, and an IDE to connect to the Postgres DB.
+```
 
 
 ## ToDo 
